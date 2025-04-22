@@ -1,0 +1,22 @@
+# Node.js
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+
+# Environment files
+.env
+.env.local
+
+# Terraform
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Logs
+*.log
+
+# IDE files
+.vscode/
+.idea/

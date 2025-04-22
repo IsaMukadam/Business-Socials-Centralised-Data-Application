@@ -1,6 +1,6 @@
 # Business Socials Centralised Data Application
 
-**Business Socials Centralised Data Application** is a unified platform designed to serve as a central hub for all your business communications. It aggregates data from various social media platforms and business email accounts into one streamlined interface.
+This project is a web application hosted on AWS using free-tier resources. It includes a React/Next.js frontend, a FastAPI or Node.js backend, and Terraform for infrastructure management. The application is integrated with a CI/CD pipeline for automated deployment.
 
 ## 🎯 Purpose
 
@@ -12,6 +12,61 @@ This application tackles the common issue of **missed notifications and fragment
 - 🚫 Reduced reliance on error-prone mobile app notifications  
 - ⚡ Increased productivity and responsiveness  
 - 📊 Simplified monitoring and management of business interactions
+
+## Project Structure
+
+```
+business-socials-app/
+│
+├── frontend/                    # React/Next.js app
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── styles/
+│   ├── .env.local
+│   └── package.json
+│
+├── backend/                     # FastAPI or Node.js backend
+│   ├── app/
+│   │   ├── routes/
+│   │   ├── services/
+│   │   └── utils/
+│   ├── main.py (or index.js)
+│   ├── requirements.txt (or package.json)
+│   └── .env
+│
+├── infrastructure/             # Terraform files
+│   ├── main.tf
+│   ├── variables.tf
+│   ├── outputs.tf
+│   └── terraform.tfvars
+│
+├── .github/workflows/          # CI/CD pipelines
+│   ├── backend.yml
+│   └── frontend.yml
+│
+├── README.md
+└── .gitignore
+```
+
+## Getting Started
+
+### Prerequisites
+- Node.js and npm
+- Python (if using FastAPI)
+- Terraform
+- AWS CLI
+
+### Setup
+1. Clone the repository.
+2. Navigate to the `frontend` and `backend` directories to install dependencies.
+3. Configure AWS credentials for Terraform.
+4. Deploy the infrastructure using Terraform.
+5. Start the frontend and backend services locally for development.
+
+### CI/CD
+The `.github/workflows/` directory contains GitHub Actions workflows for automating the deployment of the frontend and backend.
 
 ---
 
