@@ -2,7 +2,7 @@
 resource "aws_instance" "backend" {
   ami           = "ami-0c55b159cbfafe1f0"  # Replace with the latest Amazon Linux AMI
   instance_type = "t2.micro"  # You can adjust the instance type
-  key_name      = env.EC2_KEY_NAME  # EC2 key pair name for SSH access
+  key_name      = var.ec2_key_name   # EC2 key pair name for SSH access
 
   tags = {
     Name = "FastAPI-Backend"
