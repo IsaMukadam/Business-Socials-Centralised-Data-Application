@@ -27,12 +27,12 @@ business-socials-app/
 │   ├── .env.local
 │   └── package.json
 │
-├── backend/                     # FastAPI or Node.js backend
+├── backend/                     # FastAPI
 │   ├── app/
 │   │   ├── routes/
 │   │   ├── services/
 │   │   └── utils/
-│   ├── main.py (or index.js)
+│   ├── main.py (Using FastAPI)
 │   ├── requirements.txt (or package.json)
 │   └── .env
 │

@@ -4,9 +4,27 @@ node_modules/
 # Python
 __pycache__/
 *.pyc
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.tox/
+.pytest_cache/
+.coverage
+htmlcov/
+.reload/
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+.ENV/
 
 # Environment files
 .env
+.env.*
 .env.local
 
 # Terraform
@@ -20,3 +38,10 @@ __pycache__/
 # IDE files
 .vscode/
 .idea/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# VS Code specific
+*.code-workspace
